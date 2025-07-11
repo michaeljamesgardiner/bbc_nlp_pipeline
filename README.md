@@ -75,6 +75,10 @@ python -m topic_modelling --input_dir "" --output_dir ""
 
 python -m entity_recognition --input_dir "" --output_dir "" --mode {media_personalities,april_events}
 
+  --mode media_personalities: Extracts named people and their professions
+
+  --mode april_events: Extracts and summarizes events from April only
+
 python -m subcategory_classification --input_dir "" --output_dir ""
 
 input_dir - output .JSON or .txt file location 
