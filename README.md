@@ -56,17 +56,17 @@ Overview - This repository contains a solution to a NLP challenge using articles
 
 In windows powershell run the following commands:
 
-git clone https://github.com/michaeljamesgardiner/bbc_nlp_pipeline.git
+*git clone https://github.com/michaeljamesgardiner/bbc_nlp_pipeline.git*
 
-cd "" insert project directory
+*cd "" insert project directory*
 
-py -m venv venv
+*py -m venv venv*
 
-.\venv\Scripts\activate
+*.\venv\Scripts\activate*
 
-pip install -e . 
+*pip install -e .*
 
-pip install llama-index-llms-groq python-dotenv
+*pip install llama-index-llms-groq python-dotenv*
 
 
 ### Define the variables with the .env file, including GROQ API key
@@ -75,16 +75,16 @@ pip install llama-index-llms-groq python-dotenv
 
 ### Functions can be called via the following commands:
 
-python -m topic_modelling --input_dir "" --output_dir ""
+*python -m topic_modelling --input_dir "" --output_dir ""*
 
-python -m entity_recognition --input_dir "" --output_dir "" --mode {media_personalities,april_events}
+*python -m entity_recognition --input_dir "" --output_dir "" --mode {media_personalities,april_events}*
 
-  --mode media_personalities: Extracts named people and their professions
+  **--mode media_personalities: Extracts named people and their professions**
 
-  --mode april_events: Extracts and summarizes events from April only
+  **--mode april_events: Extracts and summarizes events from April only**
 
-python -m subcategory_classification --input_dir "" --output_dir ""
+*python -m subcategory_classification --input_dir "" --output_dir ""*
 
-input_dir - output .JSON or .txt file location 
+**input_dir - output .JSON or .txt file location**
 
-output_dir - input directory containing category subfolders of .txt articles
+**output_dir - input directory containing category subfolders of .txt articles**
