@@ -39,7 +39,9 @@ Task 3 - April Event Extraction
 Dataset
 
   Source - BBC News dataset - http://mlg.ucd.ie/datasets/bbc.html
+  
   Format - 2225 text files organized by top-level category (Business, Entertainment, Politics, Sport, Tech), 
+  
   corresponding to articles from the BBC news website from 2004-2005
 
 ---
@@ -56,9 +58,13 @@ In windows powershell run the following commands:
 git clone https://github.com/michaeljamesgardiner/bbc_nlp_pipeline.git
 
 cd "" insert project directory
+
 py -m venv venv
+
 .\venv\Scripts\activate
+
 pip install -e . 
+
 pip install llama-index-llms-groq python-dotenv
 
 Define the variables with the .env file
@@ -66,8 +72,11 @@ Define the variables with the .env file
 Functions can be called via the follwing commands:
 
 python -m topic_modelling --input_dir "" --output_dir ""
+
 python -m entity_recognition --input_dir "" --output_dir "" --mode {media_personalities,april_events}
+
 python -m subcategory_classification --input_dir "" --output_dir ""
 
 input_dir - output .JSON or .txt file location 
+
 output_dir - input directory containing category subfolders of .txt articles
