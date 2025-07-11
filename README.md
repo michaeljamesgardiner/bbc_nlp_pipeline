@@ -68,11 +68,11 @@ In windows powershell run the following commands:
 ---
 ## Define the variables with the .env file, including GROQ API key
 
-GROQ_API_KEY="" GROQ API key
+GROQ_API_KEY="" - GROQ API key
 
-INPUT_DIR= "" input directory containing category subfolders of .txt articles
+INPUT_DIR= "" - input directory containing category subfolders of .txt articles
 
-OUTPUT_DIR= "" output .JSON or .txt file location**
+OUTPUT_DIR= "" - output .JSON or .txt file location**
 
 ---
 ## Functions can be called via the following commands:
