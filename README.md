@@ -8,7 +8,7 @@ Overview - This repository contains a solution to a NLP challenge using articles
 
 ---
 
-Task 1 - Subcategory Classification
+#Task 1 - Subcategory Classification
 
   Using topic_modelling.py, the following subcategories were generated via prompt-based topic modeling for each main BBC category:
 
@@ -25,18 +25,18 @@ Task 1 - Subcategory Classification
   Each article is then mapped to one of the derived subcategories using topic_classification.py.
 
 
-Task 2 - Named Entity Recognition (NER)
+#Task 2 - Named Entity Recognition (NER)
 
   Handled by entity_recognition.py, this step extracts names of individuals mentioned in the articles and identifies their professions (e.g., "David Beckham, Footballer", "Tony Blair, Politician").
 
 
-Task 3 - April Event Extraction
+#Task 3 - April Event Extraction
 
   Also using entity_recognition.py, the script extracts only those events that occurred during the month of April and provides a summry of those events.
 
 ---
 
-Dataset
+#Dataset
 
   Source - BBC News dataset - http://mlg.ucd.ie/datasets/bbc.html
   
@@ -45,13 +45,15 @@ Dataset
   corresponding to articles from the BBC news website from 2004-2005
 
 ---
-Outputs
+#Outputs
 
   All script outputs are saved as either .json or .txt files within /outputs
 
 ---
 
-How to Run
+#How to Run
+
+##Setup environment
 
 In windows powershell run the following commands:
 
@@ -67,9 +69,12 @@ pip install -e .
 
 pip install llama-index-llms-groq python-dotenv
 
-Define the variables with the .env file
 
-Functions can be called via the follwing commands:
+##Define the variables with the .env file
+
+
+
+##Functions can be called via the follwing commands:
 
 python -m topic_modelling --input_dir "" --output_dir ""
 
