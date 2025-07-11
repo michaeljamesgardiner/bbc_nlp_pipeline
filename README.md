@@ -73,7 +73,7 @@ pip install llama-index-llms-groq python-dotenv
 
 
 
-## Functions can be called via the follwing commands:
+### Functions can be called via the follwing commands:
 
 python -m topic_modelling --input_dir "" --output_dir ""
 
