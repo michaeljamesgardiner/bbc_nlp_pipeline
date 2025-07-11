@@ -4,7 +4,7 @@ HM Land Registry - BBC News Sub-Category Classification and NLP Tasks
 
 Michael Gardiner - michaeljamesgardiner@gmail.com
 
-Overview - This repository contains a solution to a NLP challenge using articles from the BBC News website. The goal is to classify high-level news categories into finer sub-categories, and extract named entities and event summaries through an LLM (Meta LLaMA via Groq)
+Overview - This repository contains a solution to a NLP challenge using articles from the BBC News website. The goal is to classify high-level news categories into finer sub-categories, and extract named entities and event summaries through an LLM, **Meta LLaMA via Groq**  https://groq.com/
 
 ---
 
@@ -49,10 +49,7 @@ Overview - This repository contains a solution to a NLP challenge using articles
   All script outputs are saved as either .json or .txt files within /outputs
 
 ---
-
-## How to Run
-
-### Setup environment
+## Setup environment
 
 In windows powershell run the following commands:
 
@@ -68,23 +65,21 @@ In windows powershell run the following commands:
 
 *pip install llama-index-llms-groq python-dotenv*
 
+---
+## Define the variables with the .env file, including GROQ API key
+GROQ_API_KEY="" GROQ API key
+INPUT_DIR= "" input directory containing category subfolders of .txt articles
+OUTPUT_DIR= "" output .JSON or .txt file location**
 
-### Define the variables with the .env file, including GROQ API key
-
-
-
-### Functions can be called via the following commands:
+---
+## Functions can be called via the following commands:
 
 *python -m topic_modelling --input_dir "" --output_dir ""*
+
+*python -m subcategory_classification --input_dir "" --output_dir ""*
 
 *python -m entity_recognition --input_dir "" --output_dir "" --mode {media_personalities,april_events}*
 
   **--mode media_personalities: Extracts named people and their professions**
 
   **--mode april_events: Extracts and summarizes events from April only**
-
-*python -m subcategory_classification --input_dir "" --output_dir ""*
-
-**input_dir - output .JSON or .txt file location**
-
-**output_dir - input directory containing category subfolders of .txt articles**
