@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=62"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bbc-article-processor"
+version = "0.1.0"
+readme = "README.md"
+description = "CLI tool to process and classify BBC articles using Groq LLMs via llama-index."
+license = {file = "LICENSE"}
+
+dependencies = ["llama-index-llms-groq"]
+
+requires-python = ">=3.9"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.scripts]
+tool_1 = "topic_modelling:main" 
+tool_2 = "entity_recognition:main"
+tool_3 = "subcategory_classification:main"
