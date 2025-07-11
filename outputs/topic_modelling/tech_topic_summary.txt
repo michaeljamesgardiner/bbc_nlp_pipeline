@@ -1,0 +1,14 @@
+1. **Cybersecurity and Online Threats** (34 articles)
+	* This category includes subtopics related to cybersecurity, malware, virus, online scams, spam, and other online threats.
+2. **Gaming and Entertainment** (31 articles)
+	* This category includes subtopics related to video games, gaming consoles, gaming industry trends, and online entertainment.
+3. **Mobile Technology and Telecommunications** (29 articles)
+	* This category includes subtopics related to mobile phones, mobile technology advancements, telecommunications, and mobile security threats.
+4. **Internet and Broadband** (24 articles)
+	* This category includes subtopics related to broadband adoption, internet infrastructure, internet regulation, and online services.
+5. **Gadgets and Consumer Electronics** (20 articles)
+	* This category includes subtopics related to gadgets, consumer electronics, and new product releases.
+6. **Digital Rights and Piracy** (13 articles)
+	* This category includes subtopics related to digital rights management, piracy, copyright infringement, and intellectual property.
+7. **Emerging Technologies and Trends** (12 articles)
+	* This category includes subtopics related to emerging technologies, such as artificial intelligence, robotics, and grid computing, as well as trends in tech industry.
